@@ -1,5 +1,5 @@
 #!/bin/sh
-cat <<EOF >/homework/index.html
+cat <<EOF >/init/index.html
 <html>
 <head/>
 <body>
@@ -14,7 +14,7 @@ EOF
 INFO_ENV=$(export)
 INFO_MOUNTS=$(mount)
 
-cat <<EOF >> /homework/index.html
+cat <<EOF >> /init/index.html
 <h3>Mountpoints</h3>
 <pre>$INFO_MOUNTS</pre>
 <h3>Environment</h3>
